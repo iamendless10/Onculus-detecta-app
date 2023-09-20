@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lri_rbb/main.dart';
+import 'package:lri_rbb/smooth_page.dart';
 
 
 class loading_screen extends StatelessWidget {
@@ -8,12 +9,12 @@ class loading_screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      // onTap: (){
-      //   Navigator.push(
-      //     context,
-      //     MaterialPageRoute(builder: (context) => ),
-      //   );
-      // },
+      onTap: (){
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => smooth_page()),
+        );
+      },
       child: Scaffold(
         body: Container(
           height: double.infinity,
@@ -25,7 +26,6 @@ class loading_screen extends StatelessWidget {
               colors: [
                 Color(0xffE6FFFD),
                 Color(0xffB0DAFF),
-                //comment
 
               ]
             )
