@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '';
 
 class onboard extends StatelessWidget {
   const onboard({Key? key}) : super(key: key);

@@ -13,7 +13,7 @@ class start extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: <Widget>[
-          loading_screen(),
+          LoadingScreen(),
           //comment
         ],
       ),
